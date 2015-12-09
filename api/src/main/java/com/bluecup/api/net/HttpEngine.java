@@ -1,4 +1,4 @@
-package com.bluecup.api;
+package com.bluecup.api.net;
 
 import com.google.gson.Gson;
 

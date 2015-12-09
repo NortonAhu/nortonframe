@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bluecup.nortonframe.activity.LoginActivity">
+
+    <!-- EditText的id命名统一以edit开头，而在Activity里的控件变量名则以Edit结尾。
+    按钮的onClick也统一用toXXX的方式命名，明确表明这是一个将要做的动作。
+    还有，string，dimen也都统一在相应的资源文件里按照相应的规范去定义。-->
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_vertical_margin"
+        android:layout_marginTop="@dimen/edit_vertical_margin"
+        android:hint="@string/hint_phone"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edit_vertical_margin"
+        android:layout_marginTop="@dimen/edit_vertical_margin"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/btn_vertical_margin"
+        android:layout_marginTop="@dimen/btn_vertical_margin"
+        android:onClick="toLogin"
+        android:text="@string/btn_login" />
+
+</LinearLayout>

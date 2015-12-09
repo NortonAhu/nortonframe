@@ -13,6 +13,11 @@ import java.io.Serializable;
  */
 public class CouponBO implements Serializable {
     private static final long serialVersionUID = 2090689149399711778L;
+
+    public static final int TYPE_CASH = 1; // 现金券
+    public static final int TYPE_DEBIT = 2; // 抵扣券
+    public static final int TYPE_DISCOUNT = 3; // 折扣券
+
     private int id;                // 券id
     private String name;           // 券名称
     private String introduce;      // 券简介
